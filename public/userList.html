@@ -1,0 +1,31 @@
+<div class="container">
+
+    <h1>List of Users</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Location</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr ng-repeat="user in users">
+            <td><a href="#/user-details/{{user.id}}" ng-click="userDetails(user.id)">{{ user.username }}</a></td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.age }}</td>
+            <td>{{ user.location }}</td>
+            <td>
+                <button class="btn btn-sm btn-danger" ng-click="deleteUser(user.id)"> Delete</button>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
