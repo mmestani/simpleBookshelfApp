@@ -1,4 +1,4 @@
-CREATE DATABASE `simple_bookshelf` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE `simple_bookshelf` ;
 
 use simple_bookshelf;
 
@@ -10,5 +10,5 @@ CREATE TABLE `users` (
   `age` int(11) DEFAULT NULL,
   `location` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
