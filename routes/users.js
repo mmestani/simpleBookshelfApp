@@ -1,6 +1,6 @@
-var Model = require('./../models/user');
+var Model = require('./../models/User');
 
-/* Route for saving a user */
+/* Save a user */
 var saveUser = function (req, res) {
 	new Model.User({
 		username: req.body.username,
@@ -17,7 +17,7 @@ var saveUser = function (req, res) {
 		});
 };
 
-/* Route to get all users */
+/* Get all users */
 var getAllUsers = function (req, res) {
 	new Model.User().fetchAll()
 		.then(function (users) {
@@ -28,7 +28,7 @@ var getAllUsers = function (req, res) {
 		});
 };
 
-/* Route to delete a user */
+/* Delete a user */
 var deleteUser = function (req, res) {
 	var userId = req.params.id;
 	new Model.User().where('id', userId)
@@ -39,7 +39,7 @@ var deleteUser = function (req, res) {
 		});
 };
 
-/* Route to get a user */
+/* Get a user */
 var getUser = function (req, res) {
 	var userId = req.params.id;
 	new Model.User().where('id', userId)
@@ -52,10 +52,11 @@ var getUser = function (req, res) {
 		});
 };
 
-/* Export all routes */
+/* Exports all methods */
 module.exports = {
 	saveUser: saveUser,
 	getAllUsers: getAllUsers,
 	deleteUser: deleteUser,
-	getUser: getUser
+	getUser: getUser,
+	isAuthenticated: isAuthenticated
 };

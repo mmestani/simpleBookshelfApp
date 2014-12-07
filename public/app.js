@@ -38,8 +38,8 @@ angular.module('simpleBookshelfApp', ['ngResource', 'ngRoute'])
 			$scope.users = UsersFactory.listUsers();
 
 		}])
-	.controller('UserDetailsCtrl', ['$scope', '$routeParams', 'UserFactory', '$location',
-		function ($scope, $routeParams, UserFactory, $location) {
+	.controller('UserDetailsCtrl', ['$scope', '$routeParams', 'UserFactory', 'UsersFactory', '$location',
+		function ($scope, $routeParams, UserFactory, UsersFactory, $location) {
 			$scope.userDetails = function () {
 				$location.path('/user-details');
 			};
