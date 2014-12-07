@@ -57,6 +57,5 @@ module.exports = {
 	saveUser: saveUser,
 	getAllUsers: getAllUsers,
 	deleteUser: deleteUser,
-	getUser: getUser,
-	isAuthenticated: isAuthenticated
+	getUser: getUser
 };
