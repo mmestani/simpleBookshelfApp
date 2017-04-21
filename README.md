@@ -1,12 +1,15 @@
 Simple Application that uses Node.js(Express) and Bookshelf.js ORM
 ==================================================================
-<h3>Description</h3>
+
+
+### Description
 ---------------------
 This is a simple application that implements bookshelf.js JavaScript ORM(Object Relational Mapping) with Node.js
 
 There is included an example that create, list, delete and list details of an user.
 
-<h3>File Structure</h3>
+
+### File Structure
 -----------------------
     simpleBookshelfApp/                 - Location for simpleBookshelfApp specific files.
     simpleBookshelfApp/config/          - Location for configuration files.
@@ -22,7 +25,8 @@ There is included an example that create, list, delete and list details of an us
     server.js                           - Main application file.
     README.md                           - This file.
     
-<h3>Packages (package.json)</h3>
+
+### Packages (package.json)
 ---------------------------------------------------
   This store node modules dependencies used in application.
   
@@ -35,8 +39,9 @@ There is included an example that create, list, delete and list details of an us
      
   All these package are installed by ```npm```(Node Package Manager). You have to type ```npm install``` at directory package.json is stored and all packages will be installed automatically. 
   
-<h3>Code description</h3>
--------------------------
+
+### Code description
+
 1. In the ```config/db.js``` is stored database configuration,
   
       First, there is declared an object ```DBConfig```, in this object are stored data for database client and database options
